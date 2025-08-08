@@ -1,0 +1,4 @@
+The repository is organized as follows: the raw data are encapsulated in a QCoDes database (\url{https://microsoft.github.io/Qcodes/}) named 'D-SQUID-06.db'.
+Post-treated critical current data are included as .csv files and are indexed by measurement ids.
+The principal analysis is realized in the Jupyter notebook 'Fits_and_Figures.ipynb', which includes all article figures as well as fit functions for fitting both Ic- and Ic+ simulatenously, first using analytical expression from equation 3 then using numerical expression from equation 5. All fits mentionned in the article are performed there.
+The repository includes a generic notebook "Extract_Critical_Current.ipynb" used to explore the raw data in the Qcodes database and features an enhanced peak detection script that we used to automatically extract critical current data despite having some artifacts on raw differential conductance versus bias current and magnetic field.
